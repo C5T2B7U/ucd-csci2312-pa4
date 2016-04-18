@@ -1,3 +1,10 @@
+# NOTE:
+
+# IF YOU ARE A UCDENVER CSCI2312 STUDENT AND YOU ARE READING THIS, YOU ARE CHEATING.  LEAVE THIS PAGE IMMEDIATELY.
+
+# THANK YOU FOR YOUR COOPERATION.
+
+
 ## CSCI 2312: Programming Assignment 4
 
 _inheritance, polymorphism, board games, randomization_
