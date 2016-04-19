@@ -32,7 +32,7 @@ namespace Gaming
 
 	double Gaming::Advantage::getCapacity() const
 	{
-		return Resource::getCapacity();
+		return __capacity * ADVANTAGE_MULT_FACTOR;
 	}
 
 
