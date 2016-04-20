@@ -26,7 +26,10 @@ namespace Gaming
 
 	void Gaming::Strategic::print(std::ostream &os) const
 	{
-
+		std::string buffer;
+		buffer += STRATEGIC_ID;
+		buffer += Strategic::__id;
+		os << buffer;
 	}
 
 

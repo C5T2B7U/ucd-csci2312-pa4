@@ -21,25 +21,25 @@ namespace Gaming
 
 	unsigned Gaming::DimensionEx::getExpWidth() const
 	{
-		return 0;
+		return __width;
 	}
 
 
 	unsigned Gaming::DimensionEx::getExpHeight() const
 	{
-		return 0;
+		return __height;
 	}
 
 
 	unsigned Gaming::DimensionEx::getWidth() const
 	{
-		return 0;
+		return __width;
 	}
 
 
 	unsigned Gaming::DimensionEx::getHeight() const
 	{
-		return 0;
+		return __height;
 	}
 
 

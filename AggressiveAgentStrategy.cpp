@@ -8,7 +8,7 @@ namespace Gaming
 	const double AggressiveAgentStrategy::DEFAULT_AGGRESSION_THRESHOLD = Game::STARTING_AGENT_ENERGY * 0.75;
 
 
-	Gaming::AggressiveAgentStrategy::AggressiveAgentStrategy(double agentEnergy)
+	Gaming::AggressiveAgentStrategy::AggressiveAgentStrategy(double agentEnergy) : __agentEnergy(agentEnergy)
 	{
 
 	}

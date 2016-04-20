@@ -15,6 +15,9 @@ namespace Gaming
 
 
 
+
+
+
 	PositionRandomizer Game::__posRandomizer = PositionRandomizer();
 
 
@@ -27,13 +30,23 @@ namespace Gaming
 
 	Gaming::Game::Game()
 	{
-
+		__round = 0;
+		__numInitAgents = (__width * __height) / NUM_INIT_AGENT_FACTOR;
+		__numInitResources = (__width * __height) / NUM_INIT_RESOURCE_FACTOR;
 	}
 
 
-	Gaming::Game::Game(unsigned width, unsigned height, bool manual)
+	Gaming::Game::Game(unsigned width, unsigned height, bool manual) : __width(width), __height(height)
 	{
+		__round = 0;
+		__numInitAgents = (__width * __height) / NUM_INIT_AGENT_FACTOR;
+		__numInitResources = (__width * __height) / NUM_INIT_RESOURCE_FACTOR;
 
+
+//		unsigned int numStrategic = __numInitAgents / 2;
+//		unsigned int numSimple = __numInitAgents - numStrategic;
+//		unsigned int numAdvantages = __numInitResources / 4;
+//		unsigned int numFoods = __numInitResources - numAdvantages;
 	}
 
 
@@ -159,6 +172,7 @@ namespace Gaming
 
 	std::ostream &operator<<(std::ostream &os, const Game &game)
 	{
+		os << "Round: " << game.getRound() << "\n" << "[]";
 		return os;
 	}
 

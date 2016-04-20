@@ -26,7 +26,10 @@ namespace Gaming
 
 	void Gaming::Advantage::print(std::ostream &os) const
 	{
-
+		std::string buffer;
+		buffer += ADVANTAGE_ID;
+		buffer += Advantage::__id;
+		os << buffer;
 	}
 
 
@@ -40,6 +43,12 @@ namespace Gaming
 	{
 		return Resource::consume();
 	}
+
+
+//	void Advantage::age()
+//	{
+//		Advantage::Resource::__capacity /= RESOURCE_SPOIL_FACTOR;
+//	}
 
 
 }

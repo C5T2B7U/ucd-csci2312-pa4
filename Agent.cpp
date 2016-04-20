@@ -22,7 +22,7 @@ namespace Gaming
 
 	void Gaming::Agent::age()
 	{
-
+		__energy -= AGENT_FATIGUE_RATE;
 	}
 
 	Piece &Gaming::Agent::interact(Agent *arg)

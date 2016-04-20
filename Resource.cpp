@@ -30,7 +30,7 @@ namespace Gaming
 
 	void Gaming::Resource::age()
 	{
-
+		__capacity /= RESOURCE_SPOIL_FACTOR;
 	}
 
 

@@ -26,7 +26,10 @@ namespace Gaming
 
 	void Gaming::Simple::print(std::ostream &os) const
 	{
-
+		std::string buffer;
+		buffer += SIMPLE_ID;
+		buffer += Simple::__id;
+		os << buffer;
 	}
 
 

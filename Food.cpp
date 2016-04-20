@@ -22,7 +22,10 @@ namespace Gaming
 
 	void Gaming::Food::print(std::ostream &os) const
 	{
-
+		std::string buffer;
+		buffer += FOOD_ID;
+		buffer += Food::__id;
+		os << buffer;
 	}
 
 
